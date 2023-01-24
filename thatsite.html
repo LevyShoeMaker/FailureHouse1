@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Why are you doing this to yourself?">
+  <title>Goofy Ah News</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" sizes="16x16" type="image/png" href="ah/RyanBoi.png" alt="Ryan">
+<style>
+  body {
+background-color: rgb(5, 5, 5);
+  }
+  </style>
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #000000;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(31, 29, 29);
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(27, 27, 27);
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-top: none;
+}
+</style>
+</head>
+<body>
+  <img style="height: 157px; width: 187px; position: absolute; right: 0; top: 0;" src="ah/RyanBoi.png">
+<h1 style="color:rgb(131, 0, 0); font-family:Brush Script; text-align:center; font-size:300%;">Goofy Ah News</h1>
+<p style="color:rgb(131, 0, 0); font-family:Comic Sans; text-align:center; font-size:110%;">Coding HTML for food. Please hire.</p>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')" style="color:rgb(131, 0, 0); font-family: sans-serif;">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Gamers')" style="color:rgb(131, 0, 0); font-family: sans-serif;">Gamer</button>
+  <button class="tablinks" onclick="openCity(event, 'Goog')" style="color:rgb(131, 0, 0); font-family: sans-serif;">Y e s</button>
+</div>
+<div id="Home" class="tabcontent">
+</div>
+<div id="Gamers" class="tabcontent">
+  <h3 style="color: rgb(131, 0, 0);font-family: Helvetica; text-align:center;">Could Video Games Make Teens Smarter?</h3>
+  <header style="color: rgb(131, 0, 0);text-align: center;">By: Levy Rau</header>
+  <video width="720" height="500" controls>
+    <source src="ah/cring.mp4">
+  </video>
+  <p style="color: rgb(131, 0, 0);">
+
+  </p>
+</div>
+<div id="Goog" class="tabcontent">
+  <h3 style="color: rgb(131, 0, 0);font-family: Helvetica; text-align:center;">Y e s</h3>
+  <p style="color: rgb(131, 0, 0);"></p>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
